@@ -5,14 +5,11 @@ export default function LoadingScreen() {
   return (
     <div className="fixed inset-0 z-50 overflow-hidden bg-black flex items-center justify-center">
 
-      {/* GRID */}
       <div className="absolute inset-0 opacity-20 bg-[linear-gradient(to_right,#06B6D420_1px,transparent_1px),linear-gradient(to_bottom,#06B6D420_1px,transparent_1px)] bg-size-[4rem_4rem]" />
 
-      {/* GLOW */}
       <div className="absolute top-10 left-10 w-72 h-72 bg-cyan-500 blur-[140px] opacity-20 rounded-full animate-pulse" />
       <div className="absolute bottom-10 right-10 w-72 h-72 bg-fuchsia-500 blur-[160px] opacity-20 rounded-full animate-pulse" />
 
-      {/* SPIN RINGS */}
       <div className="relative flex items-center justify-center">
 
         <motion.div
@@ -27,7 +24,6 @@ export default function LoadingScreen() {
           className="absolute w-44 h-44 rounded-full border border-fuchsia-400/20 border-b-fuchsia-400"
         />
 
-        {/* CENTER LOGO (REVEAL) */}
         <motion.div
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -39,7 +35,7 @@ export default function LoadingScreen() {
 
       </div>
 
-      {/* TEXT SECTION (APPEARS AFTER LOGO) */}
+      
       <div className="absolute flex flex-col items-center bottom-32">
 
         <motion.h1
@@ -62,7 +58,6 @@ export default function LoadingScreen() {
 
       </div>
 
-      {/* LOADING BAR */}
       <div className="absolute bottom-20 w-72 h-1 bg-white/10 rounded-full overflow-hidden">
         <motion.div
           initial={{ x: "-100%" }}
